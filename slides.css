@@ -1,0 +1,48 @@
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 7vw;
+}
+
+h2 {
+	font-size: 5vw;
+}
+
+h4 {
+	font-size: 2.5vw;
+}
+
+#slide_1 {
+	background: #cec;
+}
+
+#slide_1 footer h4 {
+	font-weight: 100;
+}
+
+#slide_2 {
+	background: #ffe;
+}
+
+#slide_3 {
+	background: #000;
+}
+
+#slide_3 .background {
+	background: url('img/hackerman.gif') no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	top: -25px;
+	bottom: -25px;
+	left: -25px;
+	right: -25px;
+	opacity: 0.25;
+}
+
+#img_hackerman {
+	background: url('img/hackerman.gif') no-repeat center;
+	background-size: contain;
+}
