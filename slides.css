@@ -10,29 +10,33 @@ h2 {
 	font-size: 5vw;
 }
 
+h3 {
+	font-size: 3.5vw;
+}
+
 h4 {
 	font-size: 2.5vw;
 }
 
-#slide_1 {
-	background: #cec;
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-#slide_1 footer h4 {
-	font-weight: 100;
+.flex {
+	display: flex;
+	justify-content: space-between;
 }
 
-#slide_2 {
-	background: #ffe;
+.card {
+	background: white;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 5px 0px #000;
 }
 
-#slide_3 {
-	background: #000;
-}
-
-#slide_3 .background {
-	background: url('img/hackerman.gif') no-repeat center;
-	background-size: cover;
+.background {
+	background-size: cover !important;
 	filter: blur(10px);
 	-webkit-filter: blur(10px);
 	top: -25px;
@@ -42,7 +46,163 @@ h4 {
 	opacity: 0.25;
 }
 
+.background + .full_size {
+	background-size: contain !important;
+	max-width: 80vw;
+	margin: auto;
+}
+
+#slide_01,
+#slide_300 {
+	background: #000;
+	color: #6f6;
+}
+
+#slide_01 h1 {
+	font-size: 5vw;
+}
+
+#slide_01 footer h4 {
+	font-weight: 100;
+}
+
+#slide_02 {
+	background: #000;
+}
+
+#slide_02 .background,
 #img_hackerman {
 	background: url('img/hackerman.gif') no-repeat center;
-	background-size: contain;
 }
+
+#slide_03 {
+	background: #000;
+}
+
+#slide_03 .background,
+#img_snorlax {
+	background: url('img/snorlax.gif') no-repeat center;
+}
+
+#slide_04 {
+	background: #ded;
+}
+
+#slide_04 .flex {
+	width: 75%;
+}
+
+#slide_04 img {
+	max-width: 400px;
+	max-height: 400px;
+}
+
+#slide_04 figcaption {
+	width: 400px;
+	padding: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.75vw;
+}
+
+#slide_100,
+#slide_101,
+#slide_102,
+#slide_103,
+#slide_110 {
+	background: #dfd;
+}
+
+#slide_100 .geometry.triangle {
+	width: 0;
+	height: 0;
+	border-left: 7vw solid transparent;
+	border-right: 7vw solid transparent;
+	border-bottom: 10vw solid #F00;
+	position: absolute;
+	left: 10vw;
+	top: 30vw;
+}
+
+#slide_100 .geometry.square {
+	width: 10vw;
+	height: 10vw;
+	background: #0F0;
+	position: absolute;
+	top: 30vw;
+	left: 45vw;
+}
+
+#slide_100 .geometry.circle {
+	width: 10vw;
+	height: 10vw;
+	border-radius: 50%;
+	background: #00F;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	position: absolute;
+	right: 10vw;
+	top: 30vw;
+}
+
+.slide iframe {
+	width: 50%;
+	height: 35vh;
+	transform: scale(2);
+	transform-origin: top left;
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+}
+
+#slide_110 .card,
+#slide_210 .card {
+	width: 75vw;
+	padding: 50px;
+	text-align: center;
+	font-size: 2vw;
+	margin: 25px auto;
+}
+
+#slide_110 .card a,
+#slide_210 .card a {
+	text-decoration: none;
+	color: #000;
+}
+
+#slide_200,
+#slide_201,
+#slide_202,
+#slide_210 {
+	background: #bee;
+}
+
+#slide_201 .card {
+	margin-top: 75px;
+	width: 40vw;
+	text-align: center;
+}
+
+#slide_201 h4 {
+	text-transform: uppercase;
+}
+
+#slide_201 ul ul li {
+	font-size: 1.5vw;
+	font-weight: bold;
+	margin: 75px;
+}
+
+#slide_201 q {
+	font-weight: initial;
+	font-style: italic;
+}
+
+#slide_301 .background,
+#img_thanks {
+	background: url('img/thanks.gif') no-repeat center;
+}
+

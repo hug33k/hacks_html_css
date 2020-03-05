@@ -1,7 +1,8 @@
-	var step = 1;
-	var max_steps = step;
+var step = 1;
+var max_steps = step;
 
 document.addEventListener('DOMContentLoaded', () => {
+	hljs.initHighlightingOnLoad();
 	const body = document.getElementsByTagName("body")[0];
 	const btn_prev = document.getElementById("btn_prev");
 	const btn_next = document.getElementById("btn_next");
@@ -32,4 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	btn_prev.addEventListener("click", decrementStep);
 	btn_next.addEventListener("click", incrementStep);
 	updateState();
+
+	document.onkeydown = (e) => {
+		e = e || window.event;
+
+		if (e.keyCode == '37' && step > 1) {
+			decrementStep();
+		}
+		else if ((e.keyCode == '39' || e.keyCode == '13' || e.keyCode == '32') && step < max_steps) {
+			incrementStep();
+		}
+	};
 }, false);
